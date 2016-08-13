@@ -1,0 +1,17 @@
+/**
+ * Created by swtdrm on 16/8/12.
+ */
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+    res.send('Hello World!');
+});
+
+app.get('/drmswt', function (req, res) {
+    res.send('Hello DreamSweet!');
+});
+
+app.listen(8000, function () {
+    console.log('Example app listening on port 8000!');
+});
